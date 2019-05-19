@@ -13,7 +13,7 @@ angular.module("controllers")
         angular.forEach($scope.dataValue.split(""), function(char, index){
             result.push(index % 2 == 1 ? char.toString().toUpperCase() : char.toString().toLowerCase());
         });
-        $scope.dataValue = result.join();
+        $scope.dataValue = result.join("");
     }
     
 });

@@ -10,6 +10,6 @@ angular.module("controllers")
         angular.forEach($scope.dataValue.split(""), function(char, index){
             result.push(index < 4 ? char.toUpperCase() : char);
         });
-        $scope.dataValue = result.join();
+        $scope.dataValue = result.join("");
     }
 });
