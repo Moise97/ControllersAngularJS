@@ -1,15 +1,15 @@
 angular.module("controllers")
 .controller("secondChildCtrl", function($scope){
     $scope.changeCase = function(){
-        $scope.dataValue = $scope.dataValue.toLowerCase();
+        $scope.data.dataValue = $scope.data.dataValue.toLowerCase();
     }
     
     $scope.shiftFour = function(){
         let result = [];
         
-        angular.forEach($scope.dataValue.split(""), function(char, index){
+        angular.forEach($scope.data.dataValue.split(""), function(char, index){
             result.push(index < 4 ? char.toUpperCase() : char);
         });
-        $scope.dataValue = result.join("");
+        $scope.data.dataValue = result.join("");
     }
 });
